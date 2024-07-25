@@ -1,0 +1,196 @@
+/* variables starts */
+:root {
+    --main: #FF2020;
+    --land-text-color: #0D1B34;
+    --section-color:#F2F0F3;
+    --title-page-color: #333436;
+}
+body{
+    height: 10000px;
+}
+html{
+    scroll-padding: 80px;
+    scroll-behavior: smooth;
+}
+/* variables Ends */
+
+/* global Start */
+.page-title {
+    font-size: 4rem;
+    font-weight: 900;
+    color: var(--title-page-color);
+}
+@media (max-width: 991px) {
+    .page-title {
+        font-size: 2.5rem;
+    }
+}
+/* global End */
+
+/* navbar Starts */
+nav div.navbar-collapse ul.navbar-nav li.nav-item:hover a {
+    background-color: var(--main);
+    color: white;
+    transition: 0.7s;
+}
+/* navbar Ends */
+
+/* Landing Starts */
+.landing {
+    height: auto;
+    background-image: url('../images/img/hero/about_hero.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.landing .row {
+    height: 100%;
+}
+.landing .row .col-12 .text {
+    font-size: 5rem;
+    color: var(--land-text-color);
+}
+.row .col-12 .content button {
+    background-color: var(--main);
+    box-shadow:inset 0 0 gray;
+    transition: all 0.5s ;
+}
+.row .col-12 .content button:hover {
+    box-shadow:inset 200px 0 rgb(77, 77, 77);
+}
+.row .col-12 .content button:active{
+    transform:translatey(-10px);
+}
+@media (max-width: 991px) {
+    .landing {
+        height: calc(100vh - 72px);
+    }
+    .landing .row .col-12 .text {
+        font-size: 3rem;
+    }
+    .landing .row .col-12 p {
+        font-size: 1.5rem;
+    }
+}
+/* Landing Ends */
+
+/* new porducts starts */
+.products .row .col .image-card {
+    overflow: hidden;
+}
+.products .row .col .image-card img {
+    transition:0.5s;
+}
+.products .row .col .image-card img:hover {
+    transform: scale(1.1);
+}
+.products .row .col p {
+    color: var(--main);
+}
+/* new porducts Ends */
+
+/* images partation starts */
+.imgs-section {
+    margin-top: 100px;
+    padding: 60px 0;
+    height: auto;
+    background-color: var(--section-color);
+}
+.img-container .img-div{
+    overflow: hidden;
+    position: relative;
+}
+.imgs-section div img{
+    width: 100%;
+    height: 100%;
+    transform: scale(1.2);
+    transition: 0.6s;
+}
+.imgs-section div::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    transition: 0.5s;
+    display: none;
+}
+.imgs-section .img-container .img-div:hover img {
+    transform: scale(1);
+}
+.img-container .img-div:hover::after {
+    display: block;
+}
+@media (max-width:991px) {
+    .imgs-section .img-container {
+        display: flex;
+        flex-direction: column;
+    }
+}
+/* images partation Ends */
+
+/* popular items Starts */
+.new-items .container .text-container p {
+    padding: 0 100px;
+}
+.new-items .container .row .col .image-card{
+    /* box-shadow: inset 4px 0 var(--main); */
+    position: relative;
+}
+.new-items .container .row .col .image-card .red-layer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color:#ff2020b3;
+    transition:all 0.5s;
+}
+.new-items .container .row .col .position-relative .fa-heart {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 2rem;
+    border: none;
+    background-color: transparent;
+    display: none;
+}
+.new-items .container .row .col .image-card:hover .red-layer {
+    height: 100px;
+}
+.new-items .container .row .col .image-card .red-layer h1{
+    display: none;
+}
+.new-items .container .row .col .image-card:hover .red-layer h1 {
+    display: block;
+    transition: 0.8s;
+    cursor: pointer;
+}
+.new-items .container .row .col .image-card:hover .fa-heart{
+    display: inline;
+}
+/* popular items Ends */
+
+/* choice one Starts */
+.choice-one{
+    padding: 60px 0;
+    height: auto;
+    background-color: var(--section-color);
+} 
+.choice-one .row .col-12 .text {
+    font-size: 5rem;
+}
+.choice-one .row .choice-one-img img{
+    padding: 0;
+}
+.choice-one .row .col-12 .content button:hover {
+    box-shadow:inset 250px 0 rgb(77, 77, 77);
+}
+/* choice one Ends */
+
+/* red area Starts */
+.red-area .row {
+    padding-block: 600px;
+}
+/* red area Ends */
