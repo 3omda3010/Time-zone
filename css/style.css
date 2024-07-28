@@ -5,9 +5,6 @@
     --section-color:#F2F0F3;
     --title-page-color: #333436;
 }
-body{
-    height: 10000px;
-}
 html{
     scroll-padding: 80px;
     scroll-behavior: smooth;
@@ -24,6 +21,10 @@ html{
     .page-title {
         font-size: 2.5rem;
     }
+}
+::selection {
+    background-color: var(--title-page-color);
+    color: var(--main);
 }
 /* global End */
 
@@ -190,7 +191,41 @@ nav div.navbar-collapse ul.navbar-nav li.nav-item:hover a {
 /* choice one Ends */
 
 /* red area Starts */
+#price{
+    margin: 0 0 200px 0;
+}
 .red-area .row {
+    background-color: #FF2020;
     padding-block: 600px;
 }
+
 /* red area Ends */
+
+/* footer starts */
+footer ul.quicklinks li.links1{
+    list-style: none;
+    padding: 10px 0 10px 0;
+}
+footer ul.quicklinks li.links1 a{
+    text-decoration: none;
+    font-size: 1rem;
+}
+footer ul.quicklinks li.links1 a:hover{
+    color: var(--main) !important;
+}
+footer span{
+    color: var(--main);
+}
+footer .icons {
+    margin-right: 50px;
+}
+footer .icons a {
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+footer .icons a:hover{
+    color: var(--main);
+}
+/* footer ends */

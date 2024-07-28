@@ -1,3 +1,4 @@
-function makereact() {
-    document.getElementById("react").style.fontWeight = "bold";
+
+function colorchange() {
+    return document.getElementById('color').style.color = 'bold'
 }
