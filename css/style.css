@@ -51,15 +51,15 @@ nav div.navbar-collapse ul.navbar-nav li.nav-item:hover a {
     font-size: 5rem;
     color: var(--land-text-color);
 }
-.row .col-12 button {
+.row .col-12 button.hovered {
     background-color: var(--main);
     box-shadow:inset 0 0 gray;
     transition: all 0.5s ;
 }
-.row .col-12  button:hover {
+.row .col-12 button.hovered:hover {
     box-shadow:inset 200px 0 rgb(77, 77, 77);
 }
-.row .col-12 button:active{
+.row .col-12 button.hovered:active{
     transform:translatey(-10px);
 }
 @media (max-width: 991px) {
