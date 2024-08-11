@@ -5,13 +5,22 @@
     --section-color:#F2F0F3;
     --title-page-color: #333436;
 }
+/* variables Ends */
+/* global Start */
 html{
     scroll-padding: 80px;
     scroll-behavior: smooth;
 }
-/* variables Ends */
-
-/* global Start */
+::-webkit-scrollbar {
+    width: 15px;
+}
+::-webkit-scrollbar-thumb {
+    /* background-color: var(--main); */
+    background-image: linear-gradient(var(--title-page-color),var(--main),var(--title-page-color));
+}
+::-webkit-scrollbar-track {
+    background-color: var(--title-page-color);
+}
 .page-title {
     font-size: 4rem;
     font-weight: 900;
@@ -152,7 +161,7 @@ nav div.navbar-collapse ul.navbar-nav li.nav-item:hover a {
     left: 0;
     width: 100%;
     height: 4px;
-    background-color:#ff2020b3;
+    background-color:#ff2020;
     transition:all 0.5s;
 }
 .new-items .container .row .col .position-relative .fa-heart {
@@ -168,11 +177,11 @@ nav div.navbar-collapse ul.navbar-nav li.nav-item:hover a {
     height: 100px;
 }
 .new-items .container .row .col .image-card .red-layer h1{
-    display: none;
+    visibility: hidden;
+    transition-delay: 0.1s;
 }
 .new-items .container .row .col .image-card:hover .red-layer h1 {
-    display: block;
-    transition: 0.8s;
+    visibility: visible;
     cursor: pointer;
 }
 .new-items .container .row .col .image-card:hover .fa-heart{
